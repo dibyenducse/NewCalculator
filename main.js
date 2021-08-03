@@ -13,18 +13,18 @@
      let onScreen = screen.innerHTML
      screen.innerHTML = onScreen.slice(0,-1)
 
-   } else if(screen.innerHTML === '0'){
-     screen.innerHTML = button;
+   } else if(screen.innerHTML === ""){
+     screen.innerHTML = e.target.innerHTML;
 
    }else{
-     screen.innerHTML += button;
+     screen.innerHTML += e.target.innerHTML;
    }
  }
 
 
  function resolve(){
-  let onScreen = (screen.innerHTML)
-  screen.innerHTML = Math.round(eval(onScreen)*1000) / 1000
+  let onScreen = screen.innerHTML;
+  screen.innerHTML = eval(onScreen)
  }
 
  console.log(resolve());
