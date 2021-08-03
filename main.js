@@ -1,6 +1,6 @@
  let screen = document.querySelector('.input');
  let buttons = document.querySelector('.buttons');
- let result = document.getElementById('equal');
+ let result = document.getElementById('result');
 
  buttons.addEventListener('click', numberToScreen);
  result.addEventListener('click', resolve);
